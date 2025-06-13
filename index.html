@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zoro Maze Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: monospace;
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #0f0;
+      text-align: center;
+    }
+    canvas {
+      border: 2px solid #0f0;
+      margin-top: 20px;
+      display: block;
+      background-color: rgba(0,0,0,0.8);
+    }
+    .mobile-controls {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .mobile-controls button {
+      background: #222;
+      color: #0f0;
+      font-size: 24px;
+      padding: 10px 20px;
+      border: 1px solid #0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Zoro Maze 🧭</h1>
+  <canvas id="game" width="400" height="440"></canvas>
+
+  <div class="mobile-controls">
+    <button id="up">⬆️</button><br>
+    <button id="left">⬅️</button>
+    <button id="down">⬇️</button>
+    <button id="right">➡️</button><br>
+    <button id="swing">🗡️</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
