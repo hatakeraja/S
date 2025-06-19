@@ -3,7 +3,7 @@ const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 const TILE_SIZE = 40, GRID = 10;
 const TILE = { PATH:0, WALL:1, SWORD:2, GOAL:3, ENEMY:4, TRAP:5, SAKE:6 };
-let map = [], player = { x:0,y:0, frame:0 }, swords = 0, hearts = 3, gameOver = false;
+let map = [], player = { x:0,y:0, frame:0 }, swords = 3, hearts = 3, gameOver = false;
 
 // Load images
 const images = { zoro: new Image(), wall: new Image(), sword: new Image(),
